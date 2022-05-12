@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.addingtask">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/nf"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:text="TASK NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/nfe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nfe"
+            android:layout_centerHorizontal="true"
+            android:text="DESCRIPTION"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/descriptione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp" />
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/descriptione"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/append"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:background="@drawable/shape"
+                android:src="@drawable/ic_baseline_check_24"/>
+            <ImageButton
+                android:id="@+id/abort"
+                android:layout_marginLeft="100dp"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/ic_baseline_clear_24"
+                android:background="@drawable/shape"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
